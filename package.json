@@ -1,0 +1,18 @@
+{
+  "name": "demo",
+  "version": "0.0.1",
+  "description": "Stencil Component Starter",
+  "scripts": {
+    "test": "run-p --race serve testcafe",
+    "testcache": "run-p --race servecache testcafe",
+    "serve": "http-server www -c0",
+    "servecache": "http-server www -c100",
+    "testcafe": "npx testcafe chrome:headless test/test.js"
+  },
+  "devDependencies": {
+    "http-server": "^0.11.1",
+    "npm-run-all": "^4.1.5",
+    "testcafe": "^1.8.1"
+  },
+  "license": "MIT"
+}
