@@ -5,9 +5,12 @@
   "scripts": {
     "test": "run-p --race serve testcafe",
     "testcache": "run-p --race servecache testcafe",
+    "testdebug": "run-p --race serve testcafedebug",
+    "testcachedebug": "run-p --race servecache testcafedebug",
     "serve": "http-server www -c0",
     "servecache": "http-server www -c100",
-    "testcafe": "npx testcafe chrome:headless test/test.js"
+    "testcafe": "npx testcafe chrome:headless test/test.js",
+    "testcafedebug": "npx testcafe chrome test/test.js -d"
   },
   "devDependencies": {
     "http-server": "^0.11.1",
